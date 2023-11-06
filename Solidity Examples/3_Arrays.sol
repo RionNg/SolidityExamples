@@ -13,7 +13,7 @@ contract MyContract {
         values.push(_value);
     }
 
-    function valueCount() public view returns (uint256) {
+    function valueCount() public view returns(uint256) {
         return values.length;
     }
     
