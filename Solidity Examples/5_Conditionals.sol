@@ -17,7 +17,7 @@ contract MyContract {
         owner = msg.sender;
     }
 
-    function countEvenNumbers() public view returns (uint256) {
+    function countEvenNumbers() public view returns(uint256) {
         uint256 count = 0;
 
         for (uint256 i = 0; i < numbers.length; i++) {
@@ -28,7 +28,7 @@ contract MyContract {
         return count;
     }
 
-    function isEvenNumber(uint _number) public pure returns (bool) {
+    function isEvenNumber(uint _number) public pure returns(bool) {
         if (_number % 2 == 0) {
             return true;
         } else {
@@ -36,7 +36,7 @@ contract MyContract {
         }
     }
 
-    function isOwnder() public view returns (bool) {
+    function isOwnder() public view returns(bool) {
         return (msg.sender == owner);
     }
 
