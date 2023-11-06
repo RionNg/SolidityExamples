@@ -26,7 +26,7 @@ contract SecretVault {
         secret = _secret;
     }
 
-    function getSecret() public view returns (string memory) {
+    function getSecret() public view returns(string memory) {
         return secret;
     }
 }
@@ -40,7 +40,7 @@ contract Secret is Ownable {
         super;
     }
 
-    function getSecret() public view onlyOwner returns (string memory) {
+    function getSecret() public view onlyOwner returns(string memory) {
         return SecretVault(secretVault).getSecret();
     }
 }
