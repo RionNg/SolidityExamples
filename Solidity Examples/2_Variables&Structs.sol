@@ -21,7 +21,7 @@ contract MyContract {
     MyStruct public myStruct = MyStruct(1, "Hello!!");
 
     // Local Variables
-    function getValue() public pure returns (uint256) {
+    function getValue() public pure returns(uint256) {
         uint256 value = 1;
         return value;
     }
