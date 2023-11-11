@@ -36,7 +36,7 @@ contract HotelBooking {
         _;
     }
 
-    function book() public payable onlyWhileVacant costs (2 ether) {
+    function book() public payable onlyWhileVacant costs(2 ether) {
         // Check Price & Status
         currentStatus = Statuses.Occupied;
 
