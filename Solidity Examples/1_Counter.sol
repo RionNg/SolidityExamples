@@ -6,7 +6,7 @@ contract MyContract {
     // Counter
     uint256 public count;
 
-    function getCount() public view returns (uint256) {
+    function getCount() public view returns(uint256) {
         return count;
     }
 
